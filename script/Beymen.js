@@ -6,7 +6,7 @@ async function geturls(req,res) {
   const limit=req.query['limit'];
   const file=req.query['filename'];
   console.log(store,start,limit,file);
-  if(store===undefined & start===undefined& start===undefined& file===undefined){
+  if(store===undefined & start===undefined & start===undefined & file===undefined){
     res.status(500).json('variables missing')
   }
   else if(store==='' & start===''& start===''& file===''){
